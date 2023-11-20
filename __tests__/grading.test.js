@@ -107,7 +107,7 @@ describe('Test student work on helper functions', () => {
 
    test("Launch Checklist when cargo too heavy for launch", () => {
       // Shuttle should not be ready for launch, cargo too high
-      studentFunctions.formSubmission(document, list, "Chris", "Bob", 10000, 100000);
+      studentFunctions.formSubmission(document, list, "Chris", "Bob", 10001, 100000);
       expect(list).toBeVisible();
       expect(h2).toHaveStyle({color: 'red'});
       expect(h2).toHaveTextContent("Shuttle Not Ready for Launch");
