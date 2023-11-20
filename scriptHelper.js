@@ -37,9 +37,11 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
     let issues = 0;
     function emptyFieldAlert() {
         window.alert("All fields are required!");
+        issues ++;
     }
     function invalidDataAlert() {
         window.alert("Make sure to enter valid information for each field!");
+        issues++;
     }
     function notReadyToLaunch () {
         list.style.visibility = "visible";
@@ -68,6 +70,7 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
         };
     } else if (validateInput(fuelLevel) === "Not a Number") {
         invalidDataAlert();
+        return;
     } else {
         emptyFieldAlert();
         return;
@@ -81,6 +84,7 @@ function addDestinationInfo(document, name, diameter, star, distance, moons, ima
         };
     } else if (validateInput(cargoLevel) === "Not a Number") {
         invalidDataAlert();
+        return;
     } else {
         emptyFieldAlert();
         return;

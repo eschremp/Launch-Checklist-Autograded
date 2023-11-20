@@ -1,6 +1,7 @@
 
 const scriptHelper = require('./scriptHelper');
 //import {addDestinationInfo,validateInput,formSubmission,pickPlanet,myFetch} from "./scriptHelper.js";
+//to run locally add type="module" to <script> in index.html
 let listedPlanets;
 
 // Set listedPlanetsResponse equal to the value returned by calling myFetch()
